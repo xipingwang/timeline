@@ -1,0 +1,170 @@
+<svg width="1100" height="495" viewBox="0 0 1100 495" 
+                      xmlns="http://www.w3.org/2000/svg" font-family="Arial">
+    <!-- 样式定义 -->
+    <style>
+        .background { fill: #ffffff; }
+        .timeline-line { stroke: #333333; stroke-width: 2; }
+        .day-connector { stroke: #999999; stroke-dasharray: 3,2; stroke-width: 1; }
+        .event-circle { fill: #4a6da7; stroke: #ffffff; stroke-width: 1; r: 5; }
+        .event-circle.main-anchor { fill: #e74c3c; r: 6; }
+        .date-label { font-size: 11px; fill: #333333; text-anchor: middle; }
+        .time-label { font-size: 10px; fill: #555555; text-anchor: start; }
+        .event-label { font-size: 10px; fill: #333333; text-anchor: start; }
+        .day-group { stroke: none; fill: none; }
+    </style>
+
+    <!-- 背景 -->
+    <rect width="100%" height="100%" class="background" />
+
+    <!-- 主时间轴线 -->
+    <line x1="50" y1="100" x2="1050" y2="100" class="timeline-line" />
+    <!-- 2023-01-15 -->
+    <g transform="translate(80,100)">
+        <circle cx="0" cy="0" r="6" class="event-circle main-anchor"/>
+        <text x="0" y="-20" class="date-label">2023-01-15</text>
+        <g class="day-group" transform="translate(0,25)">
+            <line x1="0" y1="-15" x2="0" y2="50" class="day-connector"/>
+            <g transform="translate(0,0)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">09:00</text>
+                <text x="15" y="20" class="event-label">项目Alpha正式启动会议，</text>
+                <text x="15" y="35" class="event-label">讨论初期规划和资源分配</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 2023-03-10 -->
+    <g transform="translate(240,100)">
+        <circle cx="0" cy="0" r="6" class="event-circle main-anchor"/>
+        <text x="0" y="-20" class="date-label">2023-03-10</text>
+        <g class="day-group" transform="translate(0,25)">
+            <line x1="0" y1="-15" x2="0" y2="50" class="day-connector"/>
+            <g transform="translate(0,0)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">11:15</text>
+                <text x="15" y="20" class="event-label">第一版原型设计评审会议，收集</text>
+                <text x="15" y="35" class="event-label">各部门反馈意见</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 2023-05-10 -->
+    <g transform="translate(400,100)">
+        <circle cx="0" cy="0" r="6" class="event-circle main-anchor"/>
+        <text x="0" y="-20" class="date-label">2023-05-10</text>
+        <g class="day-group" transform="translate(0,25)">
+            <line x1="0" y1="-15" x2="0" y2="345" class="day-connector"/>
+            <g transform="translate(0,0)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">08:30</text>
+                <text x="15" y="20" class="event-label">晨会：确定项目里程碑和关键交</text>
+                <text x="15" y="35" class="event-label">付节点，讨论季度目标。</text>
+                <text x="15" y="50" class="event-label">目标是在2023年实现100</text>
+                <text x="15" y="65" class="event-label">万用户注册，实现100万订单</text>
+                <text x="15" y="80" class="event-label">交易。</text>
+                <text x="15" y="95" class="event-label">预计完成时间：2023年6月</text>
+                <text x="15" y="110" class="event-label">30日。相关人员：产品经理、</text>
+                <text x="15" y="125" class="event-label">市场团队、技术团队。</text>
+            </g>
+            <g transform="translate(0,140)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">14:15</text>
+                <text x="15" y="20" class="event-label">收到客户重要需求变更通知，影</text>
+                <text x="15" y="35" class="event-label">响后端API设计和数据库架构</text>
+                <text x="15" y="50" class="event-label">，需要紧急修改。</text>
+                <text x="15" y="65" class="event-label">问题描述：当前API设计存在</text>
+                <text x="15" y="80" class="event-label">性能瓶颈，需要优化查询逻辑，</text>
+                <text x="15" y="95" class="event-label">以提高响应速度。</text>
+                <text x="15" y="110" class="event-label">预计解决时间：1天内。相关人</text>
+                <text x="15" y="125" class="event-label">员：后端开发团队。</text>
+            </g>
+            <g transform="translate(0,280)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">19:00</text>
+                <text x="15" y="20" class="event-label">紧急修复版本部署，解决生产环</text>
+                <text x="15" y="35" class="event-label">境关键安全漏洞，系统稳定性更</text>
+                <text x="15" y="50" class="event-label">新</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 2023-07-29 -->
+    <g transform="translate(560,100)">
+        <circle cx="0" cy="0" r="6" class="event-circle main-anchor"/>
+        <text x="0" y="-20" class="date-label">2023-07-29</text>
+        <g class="day-group" transform="translate(0,25)">
+            <line x1="0" y1="-15" x2="0" y2="100" class="day-connector"/>
+            <g transform="translate(0,0)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">08:00</text>
+                <text x="15" y="20" class="event-label">首次公开演示（线上直播），超</text>
+                <text x="15" y="35" class="event-label">过500名观众参与，获得积极</text>
+                <text x="15" y="50" class="event-label">反馈</text>
+            </g>
+            <g transform="translate(0,65)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">09:00</text>
+                <text x="15" y="20" class="event-label">第二次公开演示（线上直播）</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 2023-11-11 -->
+    <g transform="translate(720,100)">
+        <circle cx="0" cy="0" r="6" class="event-circle main-anchor"/>
+        <text x="0" y="-20" class="date-label">2023-11-11</text>
+        <g class="day-group" transform="translate(0,25)">
+            <line x1="0" y1="-15" x2="0" y2="180" class="day-connector"/>
+            <g transform="translate(0,0)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">00:00</text>
+                <text x="15" y="20" class="event-label">双十一促销活动正式开始，推出</text>
+                <text x="15" y="35" class="event-label">限时折扣方案和会员专属优惠</text>
+            </g>
+            <g transform="translate(0,50)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">09:45</text>
+                <text x="15" y="20" class="event-label">服务器达到流量峰值1.2万Q</text>
+                <text x="15" y="35" class="event-label">PS，系统稳定运行，无重大故</text>
+                <text x="15" y="50" class="event-label">障</text>
+            </g>
+            <g transform="translate(0,115)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">23:59</text>
+                <text x="15" y="20" class="event-label">当日销售额统计完成，</text>
+                <text x="15" y="35" class="event-label">创下公司单日销售新纪录，同比</text>
+                <text x="15" y="50" class="event-label">增长120%</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 2024-03-08 -->
+    <g transform="translate(880,100)">
+        <circle cx="0" cy="0" r="6" class="event-circle main-anchor"/>
+        <text x="0" y="-20" class="date-label">2024-03-08</text>
+        <g class="day-group" transform="translate(0,25)">
+            <line x1="0" y1="-15" x2="0" y2="180" class="day-connector"/>
+            <g transform="translate(0,0)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">07:30</text>
+                <text x="15" y="20" class="event-label">国际妇女节专题活动上线，展示</text>
+                <text x="15" y="35" class="event-label">女性员工成就和职业发展故事</text>
+            </g>
+            <g transform="translate(0,50)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">12:00</text>
+                <text x="15" y="20" class="event-label">用户反馈收集截止，共收到32</text>
+                <text x="15" y="35" class="event-label">8条有价值的建议，将纳入下季</text>
+                <text x="15" y="50" class="event-label">度改进</text>
+            </g>
+            <g transform="translate(0,115)">
+                <circle cx="0" cy="0" r="5" class="event-circle"/>
+                <text x="15" y="5" class="time-label">18:20</text>
+                <text x="15" y="20" class="event-label">社交媒体宣传视频发布，</text>
+                <text x="15" y="35" class="event-label">24小时内获得10万次观看和</text>
+                <text x="15" y="50" class="event-label">2000次分享</text>
+            </g>
+        </g>
+    </g>
+
+</svg>
